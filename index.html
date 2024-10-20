@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعرف على الثقافة الإماراتية</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #007a3d; /* Green - UAE flag color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #000000; /* Black - UAE flag color */
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            flex-direction: column; /* Stacked vertically */
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .top-bar,
+        nav .bottom-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff; /* White text */
+            border: 2px solid #007a3d; /* Green border */
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Different colors for buttons */
+        nav a:nth-child(1),
+        nav a:nth-child(2),
+        nav a:nth-child(3) {
+            background-color: #ff0000; /* Red background */
+        }
+
+        nav a:nth-child(4),
+        nav a:nth-child(5),
+        nav a:nth-child(6),
+        nav a:nth-child(7) {
+            background-color: #000000; /* Black background */
+        }
+
+        nav a:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        /* Distinct Sections Styles */
+        .intro {
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark text for contrast */
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            border: 3px solid #000000; /* Black border */
+            text-align: right;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Content Styles */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+
+        .content section {
+            background-color: #007a3d; /* Green background */
+            color: white;
+            padding: 20px;
+            width: 45%;
+            margin: 10px;
+            border-radius: 15px;
+            border: 3px solid #000000; /* Black border */
+        }
+
+        .content section h2 {
+            font-size: 36px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+
+        .content section p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            background-color: #ff0000; /* Red background */
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px;
+            color: #ffffff;
+            border: 3px solid #000000;
+        }
+
+        .quiz label {
+            font-size: 18px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .quiz input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            width: 80%;
+        }
+
+        .quiz input[type="button"] {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #007a3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz input[type="button"]:hover {
+            background-color: #005c2d;
+        }
+
+        .quiz-result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #000000; /* Black background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>مرحبا بكم في موقع الثقافة الإماراتية</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="top-bar">
+            <a href="#whoami">من أنا؟</a>
+            <a href="#goals">ما الذي أسعى لتحقيقه؟</a>
+            <a href="#otherstuff">أشياء أخرى</a>
+        </div>
+        <div class="bottom-bar">
+            <a href="#culture">الثقافة والتقاليد</a>
+            <a href="#food">المأكولات الشعبية</a>
+            <a href="#clothing">اللباس التقليدي</a>
+            <a href="#quiz">اختبار الثقافة الإماراتية</a>
+        </div>
+    </nav>
+
+    <!-- Distinct Sections -->
+    <div class="intro">
+        <section id="whoami">
+            <h2>من أنا؟</h2>
+            <p>أنا رؤى عبدالعزيز منصور، طالبة في السادسة عشر من عمري، أعيش في مدينة زايد، أبوظبي، الإمارات. أهدف إلى مشاركة الثقافة الإماراتية والمساهمة في الأعمال التطوعية لتعزيز قيم التسامح والتعايش السلمي.</p>
+        </section>
+
+        <section id="goals">
+            <h2>ما الذي أسعى لتحقيقه؟</h2>
+            <p>نسعى لتثقيف الآخرين حول الثقافة الإماراتية وتعزيز الوعي بالتقاليد والعادات. نهدف إلى تعزيز روح التعاون والمشاركة في المجتمع من خلال الفعاليات الثقافية والمبادرات التطوعية.</p>
+        </section>
+
+        <section id="otherstuff">
+            <h2>أشياء أخرى</h2>
+            <p>سأقدم معلومات إضافية حول الفعاليات الثقافية والمناسبات المحلية، وأشجع الناس على الانخراط في أنشطة تعزز من الفهم المتبادل والتعاون بين الثقافات المختلفة.</p>
+        </section>
+    </div>
+
+    <!-- Learning Sections -->
+    <div class="content">
+        <section id="culture">
+            <h2>الثقافة والتقاليد</h2>
+            <p>في دولة الإمارات العربية المتحدة، الثقافة مستوحاة من الحياة البدوية، حيث يشكل الترابط الأسري والعادات جزءاً مهماً من حياة المجتمع.</p>
+            <p>ومن أبرز تقاليد الإماراتيين استقبال الضيوف بالكرم وحسن الضيافة، وهو ما يعبر عن الجوانب الجميلة في حياتهم اليومية.</p>
+        </section>
+
+        <section id="food">
+            <h2>المأكولات الشعبية</h2>
+            <p>من أشهر الأطباق الإماراتية التقليدية: الهريس، الذي يتميز بمكوناته الطبيعية والمغذية. ويعد طبق الجشيد أيضاً من الأطباق المفضلة في المناسبات.</p>
+            <p>تتمتع الأطباق الإماراتية بنكهات غنية ومرتبطة بالعادات القديمة، وتحتوي على مواد طبيعية من البيئة المحلية.</p>
+        </section>
+
+        <section id="clothing">
+            <h2>اللباس التقليدي</h2>
+            <p>اللباس التقليدي الإماراتي يعكس هويتهم وثقافتهم. يرتدي الرجال الكندورة وهي ثوب طويل وفضفاض، أما النساء فيرتدين العباءة وهي ملابس تغطي الجسم بالكامل.</p>
+            <p>اللباس التقليدي يعكس احترام التقاليد الإسلامية ويلائم مناخ الدولة الحار.</p>
+        </section>
+    </div>
+
+    <!-- Quiz Section -->
+    <section class="quiz" id="quiz">
+        <h2>اختبار الثقافة الإماراتية</h2>
+        <p>قم بالإجابة عن الأسئلة التالية واختبر معلوماتك:</p>
+
+        <form id="quizForm">
+            <label>1. ما هو الطبق الشعبي الذي يقدم في الأعراس؟</label>
+            <input type="text" id="q1">
+            
+            <label>2. ماذا يلبس الرجال في الإمارات؟</label>
+            <input type="text" id="q2">
+            
+            <label>3. ما هي اللغة الرسمية في دولة الإمارات؟</label>
+            <input type="text" id="q3">
+            
+            <input type="button" value="احسب النتيجة" onclick="checkAnswers()">
+        </form>
+
+        <div id="result" class="quiz-result"></div>
+    </section>
+
+    <footer>
+        <p>حقوق الطبع والنشر © 2024 - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = ["الهريس", "الكندورة", "العربية"];
+            const userAnswers = [
+                document.getElementById('q1').value,
+                document.getElementById('q2').value,
+                document.getElementById('q3').value
+            ];
+
+            let score = 0;
+            let resultText = "نتيجة الاختبار: ";
+
+            // Check answers
+            userAnswers.forEach((answer, index) => {
+                if (answer === correctAnswers[index]) {
+                    score++;
+                }
+            });
+
+            resultText += "<br>لقد أجبت عن " + score + " من أصل " + correctAnswers.length + " أسئلة.";
+            if (score === 3) {
+                resultText += "<br>ممتاز! لديك معلومات رائعة عن الثقافة الإماراتية.";
+            } else if (score === 2) {
+                resultText += "<br>جيد جدًا! لكن يمكن تحسين معرفتك.";
+            } else {
+                resultText += "<br>حاول مرة أخرى وتعلم المزيد عن الثقافة الإماراتية.";
+            }
+
+            document.getElementById('result').innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>
